@@ -65,13 +65,12 @@ body{
 }
 
 #placar{
-    height: 500px;
+    height: 200px;
     width: 400px;
     border: 1px solid black;
     text-align: center;
 }
 
-#apple{
-    height: 10px;
-    width: 10px;
+#nomeRecord, #pontosRecord{
+    font-size: 1.2em;    
 }
