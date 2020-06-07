@@ -14,7 +14,8 @@ segJogo = 0;
 pontos = 0;
 
 //var tempodeSpawn //setInterval
-var tempoJogo
+
+timeGame = 50;
 
 // Cria fruta
 
@@ -48,7 +49,7 @@ function playGame() {
     fruta.style.left = widthArea/2 + 'px'; // inicializa a fruta no meio da área
     fruta.style.top = heightArea/2 + 'px';
 
-    iniciaContador(50);
+    iniciaContador(timeGame);
 
 }
 /*
@@ -85,6 +86,8 @@ function iniciaContador(tempoJogo) {
             clearInterval(tempoJogo); // tempo para de contar
 
             salvaRecord();
+
+            atualizaRecord();
 
             //clearInterval(tempodeSpawn); // para o spawn de fruta 
 
@@ -248,11 +251,11 @@ function salvaCookieNome() {
 function salvaCookieTempo() {
     var tempo = getCookie("tempo");
     if (tempo == "") {
-        setCookie("tempo",segJogo,365);
+        setCookie("tempo",timeGame,365);
     }
     
     else if (nome != "" && nome != null) {
-            setCookie("tempo", segJogo, 365);
+            setCookie("tempo", timeGame, 365);
         }
 }
 
