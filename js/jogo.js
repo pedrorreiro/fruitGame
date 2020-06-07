@@ -1,4 +1,4 @@
-function atualizaRecord();
+atualizaRecord();
 
 quadLeft = 0;
 quadTop = 0;
