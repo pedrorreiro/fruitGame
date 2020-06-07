@@ -230,7 +230,7 @@ function getCookie(cname) {
     return "";
 }
 
-function checkCookieNome() {
+function salvaCookieNome() {
     var nome = getCookie("nome");
     if (nome != "") {
         alert("Nome já salvo:  " + nome);
@@ -243,10 +243,10 @@ function checkCookieNome() {
     }
 }
 
-function checkCookiePontos() {
+function salvaCookiePontos() {
     var cookPontos = getCookie("pontos");
     if (cookPontos == "") {
-        setCookie('pontos',pontos,365);
+        setCookie("pontos",pontos,365);
         console.log('Nao havia nenhuma pontuação registrada. Agora sim!')
     } 
     
@@ -258,9 +258,9 @@ function checkCookiePontos() {
 
 
 function salvaRecord(){
-    checkCookieNome();
+    salvaCookieNome();
 
-    checkCookiePontos()
+    salvaCookiePontos()
 
     atualizaRecord();
  
