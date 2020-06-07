@@ -233,7 +233,7 @@ function getCookie(cname) {
 function salvaCookieNome() {
     var nome = getCookie("nome");
     if (nome != "") {
-        alert("Nome já salvo:  " + nome);
+        
     } else {
         nome = prompt("Não encontramos seu registro, insira o seu nome:", "");
         if (nome != "" && nome != null) {
