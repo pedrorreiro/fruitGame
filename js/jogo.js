@@ -1,3 +1,5 @@
+function atualizaRecord();
+
 quadLeft = 0;
 quadTop = 0;
 
@@ -164,8 +166,6 @@ function move(tecla) {
         //clearInterval(tempodeSpawn);
 
         spawnFruta();
-
-        salvaRecord();
 
         //document.getElementById('segSpawn').innerHTML = segSpawn; // imprime o contador da fruta na tela
 
