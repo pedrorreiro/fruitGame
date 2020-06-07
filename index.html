@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Criador de Forma</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="folha.css">
+    </head>
+
+    <body onkeydown="getEvent(event)">
+
+        <div id="tudo">
+            <button id="playButton" onclick="playGame()">Play</button><br><br>
+
+            <div id="setasLadoEsq">
+                <img src="img/setaCima.png" onclick="move(38)" id="setaCima"><br>
+                <img src="img/setaEsq.png" onclick="move(37)">
+            </div>
+            
+            <div id="area">
+                <div id="quadrado"></div>       
+            
+            </div>
+
+            <div id="setasLadoDir">
+                <img src="img/setaDir.png" onclick="move(39)" id="setaDir"><br>
+                <img src="img/setaBaixo.png" onclick="move(40)">
+            </div>
+        </div>
+
+        <script src="js/jogo.js"></script>
+    </body>
+</html>
