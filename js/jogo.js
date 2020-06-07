@@ -79,12 +79,12 @@ function move(tecla){
             if(quadTop > 0) quadTop = quadTop - areaQuad;
             break;
         case 39: // mover para direita
-        if(quadLeft < widthArea - areaQuad) quadLeft = quadLeft + areaQuad;
+        if(quadLeft+areaQuad < widthArea - areaQuad) quadLeft = quadLeft + areaQuad;
             // se o left do quadrado for menor que o tamanho max do quadrado. 
             // Ex: left é 500 e o quadrado tem 500px, chega no máximo
             break;
         case 40: // mover pra baixo
-            if(quadTop < heightArea - areaQuad) quadTop = quadTop + areaQuad;
+            if(quadTop+areaQuad < heightArea - areaQuad) quadTop = quadTop + areaQuad;
             break;
     }
     atualizaHtml();

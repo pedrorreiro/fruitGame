@@ -23,7 +23,7 @@
 
 #setasLadoEsq{
     position: absolute;
-    left: 5%;
+    left: 0%;
     top: 10%;
     
 }
@@ -34,7 +34,7 @@
 
 #setasLadoDir{
     position: absolute;
-    right: 5%;
+    right: 0%;
 
     display: inline-block;
 }
