@@ -244,8 +244,8 @@ function checkCookieNome() {
 }
 
 function checkCookiePontos() {
-    var pontos = getCookie("pontos");
-    if (pontos == "") {
+    var cookPontos = getCookie("pontos");
+    if (cookPontos == "") {
         setCookie('pontos',pontos,365);
         console.log('Nao havia nenhuma pontuação registrada. Agora sim!')
     } 
