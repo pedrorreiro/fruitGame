@@ -1,6 +1,3 @@
-var nome = window.prompt("Insira seu nome","");
-checkCookieNome();
-
 quadLeft = 0;
 quadTop = 0;
 
@@ -236,7 +233,7 @@ function getCookie(cname) {
 function checkCookieNome() {
     var nome = getCookie("nome");
     if (nome != "") {
-        alert("Bem vindo de volta, " + user + '!');
+        alert("Nome já salvo:  " + user);
     } else {
         nome = prompt("Não encontramos seu registro, insira o seu nome:", "");
         if (nome != "" && nome != null) {
