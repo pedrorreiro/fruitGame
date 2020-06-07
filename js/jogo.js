@@ -84,6 +84,8 @@ function iniciaContador(tempoJogo) {
         if (segJogo == 0) {
             clearInterval(tempoJogo); // tempo para de contar
 
+            salvaRecord();
+
             //clearInterval(tempodeSpawn); // para o spawn de fruta 
 
             //segSpawn = 0;
@@ -243,6 +245,17 @@ function salvaCookieNome() {
     }
 }
 
+function salvaCookieTempo() {
+    var tempo = getCookie("tempo");
+    if (tempo == "") {
+        setCookie("tempo",segJogo,365);
+    }
+    
+    else if (nome != "" && nome != null) {
+            setCookie("tempo", segJogo, 365);
+        }
+}
+
 function salvaCookiePontos() {
     var cookPontos = getCookie("pontos");
     if (cookPontos == "") {
@@ -260,7 +273,9 @@ function salvaCookiePontos() {
 function salvaRecord(){
     salvaCookieNome();
 
-    salvaCookiePontos()
+    salvaCookiePontos();
+
+    salvaCookieTempo();
 
     atualizaRecord();
  
@@ -269,4 +284,5 @@ function salvaRecord(){
 function atualizaRecord(){
     document.getElementById('nomeRecord').innerHTML = getCookie('nome');
     document.getElementById('pontosRecord').innerHTML = getCookie('pontos');
+    document.getElementById('tempo').innerHTML = getCookie('tempo');
 }
