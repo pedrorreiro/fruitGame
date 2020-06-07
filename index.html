@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Criador de Forma</title>
+        <title>Fruit Game</title>
         <meta charset="UTF-8">
         <link rel="stylesheet" type="text/css" href="folha.css">
 
@@ -10,21 +10,56 @@
     <body onkeydown="getEvent(event)">
 
         <div id="tudo">
-            <button id="playButton" onclick="playGame()">Play</button><br><br>
+            <div class="bloco1">
+                <button id="playButton" onclick="playGame()">Play</button><br><br>
+                
+                <div class="tempoJogo">
+                    <span>Tempo</span><br>
+                    <span>| </span>
+                    <span>Jogo: </span>
+                    <span id="seg">0</span>
+                    <span> segundos</span>
+                    <spawn> |</spawn><br><br>
+                </div>
+<!--
+                <div class="tempoSpawn">
+                    <spawn>| </spawn>
+                    <span>Spawn: </span>
+                    <span id="segSpawn">0</span>
+                    <span> segundos</span>
+                    <span> |</span><br><br>
+                </div>
+    -->
+                <!--
+                <div id="setasLadoEsq">
+                    <img src="img/setaCima.png" onclick="move(38)" id="setaCima"><br>
+                    <img src="img/setaEsq.png" onclick="move(37)">
+                </div>
+    -->           
+                <div id="area">
+                    <div id="quadrado"></div>       
+                
+                </div>
+    <!--
+                <div id="setasLadoDir">
+                    <img src="img/setaDir.png" onclick="move(39)" id="setaDir"><br>
+                    <img src="img/setaBaixo.png" onclick="move(40)">
+                </div>
+    -->
 
-            <div id="setasLadoEsq">
-                <img src="img/setaCima.png" onclick="move(38)" id="setaCima"><br>
-                <img src="img/setaEsq.png" onclick="move(37)">
-            </div>
-            
-            <div id="area">
-                <div id="quadrado"></div>       
-            
+                <div>
+                    <span><strong>Pontos: </strong></span>
+                    <span id="pontos"><strong>0</strong></span><br><br>
+                </div>
             </div>
 
-            <div id="setasLadoDir">
-                <img src="img/setaDir.png" onclick="move(39)" id="setaDir"><br>
-                <img src="img/setaBaixo.png" onclick="move(40)">
+            <div class="bloco2">
+                <div id="placar">
+                    <h2>Placar</h2>
+                    <hr>
+
+                </div>
+
             </div>
         </div>
 
