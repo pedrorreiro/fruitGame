@@ -289,5 +289,5 @@ function atualizaRecord(){
     document.getElementById('pontosRecord').innerHTML = getCookie('pontos');
     document.getElementById('tempo').innerHTML = getCookie('tempo');
 
-    document.getElementById('record').style.display = 'inline-block'
+    document.getElementById('record').style.display = 'inline-block';
 }
