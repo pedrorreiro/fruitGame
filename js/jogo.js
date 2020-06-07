@@ -241,6 +241,7 @@ function checkCookieNome() {
         nome = prompt("Não encontramos seu registro, insira o seu nome:", "");
         if (nome != "" && nome != null) {
             setCookie("nome", nome, 365);
+            console.log('Nome cadastrado!')
         }
     }
 }
@@ -249,10 +250,12 @@ function checkCookiePontos() {
     var pontos = getCookie("pontos");
     if (pontos == "") {
         setCookie('pontos',pontos,365);
+        console.log('Nao havia nenhuma pontuação registrada. Agora sim!')
     } 
     
     else if(pontos > parseInt(getCookie("pontos"))) {
         setCookie('pontos',pontos,365);
+        console.log('Vc ultapassou a pontuação anterior!')
     }
 }
 
