@@ -1,4 +1,5 @@
 var nome = window.prompt("Insira seu nome","");
+checkCookieNome();
 
 quadLeft = 0;
 quadTop = 0;
@@ -167,7 +168,7 @@ function move(tecla) {
 
         spawnFruta();
 
-        setCookie('nome',nome,365);
+        salvaRecord();
 
         //document.getElementById('segSpawn').innerHTML = segSpawn; // imprime o contador da fruta na tela
 
@@ -232,14 +233,38 @@ function getCookie(cname) {
     return "";
 }
 
-function checkCookie() {
-    var user = getCookie("username");
-    if (user != "") {
-        alert("Welcome again " + user);
+function checkCookieNome() {
+    var nome = getCookie("nome");
+    if (nome != "") {
+        alert("Bem vindo de volta, " + user + '!');
     } else {
-        user = prompt("Please enter your name:", "");
-        if (user != "" && user != null) {
-            setCookie("username", user, 365);
+        nome = prompt("Não encontramos seu registro, insira o seu nome:", "");
+        if (nome != "" && nome != null) {
+            setCookie("nome", nome, 365);
         }
     }
+}
+
+function checkCookiePontos() {
+    var pontos = getCookie("pontos");
+    if (pontos == "") {
+        setCookie('pontos',pontos,365);
+    } 
+    
+    else if(pontos > parseInt(getCookie("pontos"))) {
+        setCookie('pontos',pontos,365);
+    }
+}
+
+
+function salvaRecord(){
+    checkCookieNome();
+
+    checkCookiePontos()
+ 
+}
+
+function atualizaRecord(){
+    document.getElementById('nomeRecord').innerHTML = getCookie('nome');
+    document.getElementById('pontosRecord').innerHTML = getCookie('pontos');
 }

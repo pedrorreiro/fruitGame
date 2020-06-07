@@ -68,6 +68,7 @@ body{
     height: 500px;
     width: 400px;
     border: 1px solid black;
+    text-align: center;
 }
 
 #apple{
