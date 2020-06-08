@@ -281,8 +281,6 @@ function salvaRecord(){
     salvaCookieTempo();
 
     atualizaRecord();
-
-    document.getElementById('record').style.display = "inline-block";
  
 }
 
