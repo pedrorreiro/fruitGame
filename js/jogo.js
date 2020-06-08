@@ -238,12 +238,10 @@ function getCookie(cname) {
 function salvaCookieNome() {
     var nome = getCookie("nome");
     if (nome != "") {
-        alert("Pontuação salva!")
     } else {
         nome = prompt("Não encontramos seu registro, insira o seu nome:", "");
         if (nome != "" && nome != null) {
             setCookie("nome", nome, 365);
-            console.log('Nome cadastrado!')
         }
     }
 }
