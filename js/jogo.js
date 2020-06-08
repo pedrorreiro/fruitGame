@@ -15,7 +15,7 @@ pontos = 0;
 
 //var tempodeSpawn //setInterval
 
-timeGame = 50;
+timeGame = 25;
 
 // Cria fruta
 
