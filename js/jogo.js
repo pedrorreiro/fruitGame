@@ -252,7 +252,7 @@ function salvaCookieTempo() {
         setCookie("tempo",timeGame,365);
     }
     
-    else if (nome != "" && nome != null) {
+    else if (tempo != "" && tempo != null) {
             setCookie("tempo", timeGame, 365);
         }
 }
