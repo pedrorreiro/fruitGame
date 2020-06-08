@@ -11,16 +11,6 @@
 
         <div id="tudo">
             <div class="bloco1">
-                <button id="playButton" onclick="playGame()">Play</button><br><br>
-                
-                <div class="tempoJogo">
-                    <span>Tempo</span><br>
-                    <span>| </span>
-                    <span>Jogo: </span>
-                    <span id="seg">0</span>
-                    <span> segundos</span>
-                    <spawn> |</spawn><br><br>
-                </div>
 <!--
                 <div class="tempoSpawn">
                     <spawn>| </spawn>
@@ -37,6 +27,7 @@
                 </div>
     -->           
                 <div id="area">
+                    <p id="gameOver">GAME OVER</p>
                     <div id="quadrado"></div>       
                 
                 </div>
@@ -47,24 +38,38 @@
                 </div>
     -->
 
-                <div>
-                    <span><strong>Pontos: </strong></span>
-                    <span id="pontos"><strong>0</strong></span><br><br>
+                <div class="description">
+                    
                 </div>
             </div>
 
             <div class="bloco2">
                 <div id="placar">
-                    <h2>Recordes Pessoais</h2>
-                    <hr>
-                    <div id="record"><br>
+                    <h2>Recordes Pessoais</h2><hr>
+                
+                    <div id="record" class="description"><br>
                         Nome: <span id="nomeRecord"></span><br>
                         Pontuação: <span id="pontosRecord"></span><br>
                         Tempo: <span id="tempo"></span>seg
                     </div>
 
                 </div><br>
+
+                <div id="placar">
+                    <h2>JOGO</h2><hr>
+                    <div id="record" class="description"><br>
+                            <span>Tempo:</span>
+                            <span id="seg">0</span>
+                            <span> s</span><br><br>
+                            <span><strong>Pontos: </strong></span>
+                             <span id="pontos"><strong>0</strong></span><br><br>
+                            <button id="playButton" onclick="playGame()">Play</button><br><br>
+                    </div>
+
+                </div><br>
             </div>
+
+            
 
         </div>
 

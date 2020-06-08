@@ -21,7 +21,7 @@ timeGame = 25;
 
 var fruta = document.createElement("div");
 fruta.id = 'fruta';
-fruta.style.background = "red";
+fruta.style.background = "orange";
 fruta.style.position = 'relative';
 
 document.getElementById('area').appendChild(fruta);
@@ -38,6 +38,8 @@ function playGame() {
     pontos = 0;
 
     document.getElementById('pontos').innerHTML = pontos;
+
+    document.getElementById('gameOver').style.display = "none";
 
     fruta.style.height = areaQuad + 'px';
     fruta.style.width = areaQuad + 'px';
@@ -88,6 +90,8 @@ function iniciaContador(tempoJogo) {
             salvaRecord();
 
             atualizaRecord();
+
+            document.getElementById('gameOver').style.display = "inline-block";
 
             //clearInterval(tempodeSpawn); // para o spawn de fruta 
 
