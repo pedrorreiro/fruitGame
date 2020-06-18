@@ -1,7 +1,7 @@
 // Login adm
 
-var user = 'pedrorreiro';
-var senha = 'asdjkl'
+var user = 'pedro';
+var senha = '1234'
 
 var options = document.getElementsByName('userType');
 
@@ -32,6 +32,7 @@ function verificaLogin(){
 
     else{
         document.getElementById('erroDados').style.display = 'block' // aparece erro
+        document.getElementById('msgManutention').style.display = 'none'; // esconde msg de manutenção
     }
 }
 
