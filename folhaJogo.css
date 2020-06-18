@@ -1,5 +1,5 @@
 body{
-    background: black;
+    background: #eeeeee;
 }
 
 #tudo{
@@ -25,18 +25,19 @@ body{
 
 
 #area{
-    border: 8px  groove yellow;
+    border: 8px  groove #007bff;
+    background: white;
     border-radius: 10px;
     text-align: center;
     display: inline-block;
     height: 500px;
     width: 500px;
-
+    box-sizing: content-box;
 
 }
 
 #quadrado{
-    background: white;
+    background: green;
     position: relative;
     left: 0;
     right: 0;
@@ -67,24 +68,21 @@ body{
 }
 
 #placar{
-    height: 200px;
     width: 400px;
-    border: 8px  groove yellow;
+    border: 8px  groove #007bff;
     text-align: center;
     border-radius: 10px;
-    background: black;
+    background: white;
 }
 
 #nomeRecord, #pontosRecord{
     font-size: 1.2em;    
 }
 
-h2, .description{
+h3, .description{
     
-    color: white;
     margin: 0px;
-    padding: 10px;
-    text-shadow:#000 1px -1px, #000 -1px 1px, #000 1px 1px, #000 -1px -1px
+    padding: 8px;
 }
 
 .description{
@@ -95,8 +93,6 @@ h2, .description{
     display: inline-block;
     font-size: 2em;
     font-weight: bold;
-    background-color: black;
-    color: white;
     position: relative;
     top: 180px;
     display: none;

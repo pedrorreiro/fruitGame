@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Fruit Game</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="folhaJogo.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    </head>
+
+    <body onkeydown="getEvent(event)">
+
+        <div id="tudo">
+            <div class="bloco1">
+<!--
+                <div class="tempoSpawn">
+                    <spawn>| </spawn>
+                    <span>Spawn: </span>
+                    <span id="segSpawn">0</span>
+                    <span> segundos</span>
+                    <span> |</span><br><br>
+                </div>
+    -->
+                <!--
+                <div id="setasLadoEsq">
+                    <img src="img/setaCima.png" onclick="move(38)" id="setaCima"><br>
+                    <img src="img/setaEsq.png" onclick="move(37)">
+                </div>
+    -->           
+                <div id="area">
+                    <p id="gameOver">GAME OVER</p>
+                    <div id="quadrado"></div>       
+                
+                </div>
+    <!--
+                <div id="setasLadoDir">
+                    <img src="img/setaDir.png" onclick="move(39)" id="setaDir"><br>
+                    <img src="img/setaBaixo.png" onclick="move(40)">
+                </div>
+    -->
+
+                <div class="description">
+                    
+                </div>
+            </div>
+
+            <div class="bloco2">
+                <div id="placar">
+                    <h3>Recorde Pessoal</h2><hr>
+                
+                    <div id="record" class="description">
+                        Nome: <span id="nomeRecord"></span><br>
+                        Pontuação: <span id="pontosRecord"></span><br>
+                        Tempo: <span id="tempo"></span>seg
+                    </div><br>
+
+                </div><br>
+
+                <div id="placar">
+                    <h3>JOGO</h2><hr>
+                    <div id="record" class="description">
+                            <span>Tempo:</span>
+                            <span id="seg">0</span>
+                            <span> s</span><br><br>
+                            <span><strong>Pontos: </strong></span>
+                            <span id="pontos"><strong>0</strong></span><br><br>
+
+                            <div class="btn-toolbar" role="toolbar" aria-label="..." style="display: inline-block;">
+                                <div class="btn-group mr-2" role="group" aria-label="grupo1">
+                                    <button type="button" class="btn btn-primary" onclick="playGame()">Play</button>
+                                </div>
+                                <div class="btn-group mr-2" role="group" aria-label="grupo2"></div>
+                                    <button type="button" class="btn btn-primary" onclick="sair()">Sair</button>
+                            
+                            </div>
+
+                    </div>
+
+                </div><br>
+            </div>
+
+            
+
+        </div>
+
+        <script src="js/jogo.js"></script>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    </body>
+</html>

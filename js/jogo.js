@@ -21,7 +21,7 @@ timeGame = 25;
 
 var fruta = document.createElement("div");
 fruta.id = 'fruta';
-fruta.style.background = "orange";
+fruta.style.background = "red";
 fruta.style.position = 'relative';
 
 document.getElementById('area').appendChild(fruta);
@@ -53,6 +53,10 @@ function playGame() {
 
     iniciaContador(timeGame);
 
+}
+
+function sair(){
+    window.location.replace('index.html')
 }
 /*
 function capturaTelaSize(){
@@ -148,18 +152,18 @@ function move(tecla) {
 
     switch (tecla) {
         case 37: // mover pra esquerda
-            if (quadLeft > 0) quadLeft = quadLeft - areaQuad;
+            if (quadLeft > 0) quadLeft = quadLeft - areaQuad; 
             break;
         case 38: //mover pra cima
             if (quadTop > 0) quadTop = quadTop - areaQuad;
             break;
         case 39: // mover para direita
-            if (widthArea - quadLeft > areaQuad) quadLeft = quadLeft + areaQuad;
+            if (widthArea - quadLeft > areaQuad) quadLeft = quadLeft + areaQuad; // 20 é a borda right + left
             // se o left do quadrado for menor que o tamanho max do quadrado. 
             // Ex: left é 500 e o quadrado tem 500px, chega no máximo
             break;
         case 40: // mover pra baixo
-            if (heightArea - quadTop > areaQuad) quadTop = quadTop + areaQuad;
+            if (heightArea - quadTop > areaQuad) quadTop = quadTop + areaQuad; // 20 é a borda top + bottom
             break;
     }
     atualizaHtml();
