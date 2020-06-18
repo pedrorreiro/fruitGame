@@ -69,6 +69,7 @@ function capturaTelaSize(){
 function iniciaContador(tempoJogo) {
 
     segJogo = tempoJogo;
+
     //segSpawn = tempoSpawn;
 
     resetaQuadPos(); // posiciona o quadrado

@@ -85,6 +85,10 @@ h3, .description{
     padding: 8px;
 }
 
+h3{
+    text-shadow:#000 1px -1px, #000 -1px 1px, #000 1px 1px, #000 -1px -1px
+}
+
 .description{
     font-weight: bold;
 }
