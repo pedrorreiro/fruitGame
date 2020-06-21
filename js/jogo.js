@@ -40,6 +40,7 @@ function playGame() {
     document.getElementById('pontos').innerHTML = pontos;
 
     document.getElementById('gameOver').style.display = "none";
+    document.getElementById('pressSpace').style.display = "none";
 
     fruta.style.height = areaQuad + 'px';
     fruta.style.width = areaQuad + 'px';
@@ -97,6 +98,7 @@ function iniciaContador(tempoJogo) {
             atualizaRecord();
 
             document.getElementById('gameOver').style.display = "inline-block";
+            document.getElementById('pressSpace').style.display = "inline-block";
 
             //clearInterval(tempodeSpawn); // para o spawn de fruta 
 
@@ -197,6 +199,8 @@ function getEvent(e) {
     tecla = parseInt(tecla)
 
     if (tecla >= 37 && tecla <= 40) move(tecla);
+
+    else if(tecla == 32) playGame()
 }
 
 function spawnFruta(){

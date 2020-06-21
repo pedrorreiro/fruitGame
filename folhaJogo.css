@@ -101,3 +101,11 @@ h3{
     top: 180px;
     display: none;
 }
+
+#pressSpace{
+    display: inline-block;
+    font-size: 1.7em;
+    font-weight: bold;
+    position: relative;
+    top: 180px;
+}
